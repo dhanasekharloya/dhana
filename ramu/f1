@@ -1,0 +1,13 @@
+num=int(input("enter number value:"))
+no_of_digits=len(str(num))
+temp=num
+s=0
+while temp>=1:
+    dig=temp%10
+    s+=dig**no_of_digits
+    temp//=10
+if num==s:
+    print("given number is armstrong number")
+else:
+    print("given number is not armstrong number")
+
